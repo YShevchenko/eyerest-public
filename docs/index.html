@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EyeRest - Protect Your Eyes</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: #1a1a1a; line-height: 1.6; }
+  a { color: #0D9488; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .hero {
+    background: linear-gradient(135deg, #0D9488 0%, #0f766e 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 24px 64px;
+  }
+  .hero h1 { font-size: 3rem; font-weight: 700; margin-bottom: 12px; }
+  .hero .tagline { font-size: 1.25rem; opacity: 0.9; max-width: 480px; margin: 0 auto 32px; }
+  .badge { display: inline-block; background: #fff; color: #0D9488; font-weight: 600; padding: 4px 14px; border-radius: 20px; font-size: 0.85rem; margin-bottom: 24px; }
+
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  section { padding: 56px 0; }
+  section:nth-child(even) { background: #f8fafa; }
+  section h2 { font-size: 1.5rem; color: #0D9488; margin-bottom: 20px; text-align: center; }
+
+  .rule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    text-align: center;
+    margin-top: 28px;
+  }
+  .rule-card { background: #fff; border-radius: 12px; padding: 28px 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .rule-card .number { font-size: 2.5rem; font-weight: 700; color: #0D9488; }
+  .rule-card .label { font-size: 0.95rem; color: #555; margin-top: 4px; }
+
+  .features { list-style: none; max-width: 520px; margin: 0 auto; }
+  .features li { padding: 10px 0; padding-left: 28px; position: relative; }
+  .features li::before { content: "\2713"; position: absolute; left: 0; color: #0D9488; font-weight: 700; }
+
+  .exercises { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin-top: 20px; }
+  .exercises span { background: #fff; border: 1px solid #e0e0e0; border-radius: 8px; padding: 12px 16px; font-size: 0.95rem; text-align: center; }
+
+  .pricing-box {
+    background: #fff; border: 2px solid #0D9488; border-radius: 14px;
+    max-width: 400px; margin: 20px auto 0; padding: 28px; text-align: center;
+  }
+  .pricing-box .free { font-size: 1.4rem; font-weight: 700; color: #0D9488; }
+  .pricing-box .premium { margin-top: 12px; font-size: 0.95rem; color: #555; }
+
+  .privacy-banner {
+    text-align: center; padding: 20px 0 0;
+    font-size: 0.95rem; color: #555;
+  }
+  .privacy-banner strong { color: #0D9488; }
+
+  footer {
+    text-align: center; padding: 32px 24px;
+    font-size: 0.85rem; color: #888; border-top: 1px solid #eee;
+  }
+  footer nav { margin-bottom: 10px; }
+  footer nav a { margin: 0 12px; }
+
+  @media (max-width: 540px) {
+    .hero h1 { font-size: 2rem; }
+    .rule-grid { grid-template-columns: 1fr; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <span class="badge">Health &amp; Fitness</span>
+  <h1>EyeRest</h1>
+  <p class="tagline">Protect your eyes. Doctor-recommended 20-20-20 rule.</p>
+</div>
+
+<section>
+  <div class="container">
+    <h2>The 20-20-20 Rule</h2>
+    <p style="text-align:center;color:#555;max-width:520px;margin:0 auto;">A simple, evidence-based habit to reduce digital eye strain.</p>
+    <div class="rule-grid">
+      <div class="rule-card">
+        <div class="number">20</div>
+        <div class="label">minutes of screen time</div>
+      </div>
+      <div class="rule-card">
+        <div class="number">20</div>
+        <div class="label">second break</div>
+      </div>
+      <div class="rule-card">
+        <div class="number">20</div>
+        <div class="label">feet away focus</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Features</h2>
+    <ul class="features">
+      <li>Automatic 20-20-20 break reminders</li>
+      <li>Break and screen time tracking</li>
+      <li>6 guided eye exercises</li>
+      <li>100% offline &mdash; no accounts, no ads, no analytics</li>
+      <li>All data stays on your device</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Guided Eye Exercises</h2>
+    <p style="text-align:center;color:#555;margin-bottom:8px;">Unlock all 6 exercises with a one-time premium purchase.</p>
+    <div class="exercises">
+      <span>Rapid Blink</span>
+      <span>Palming</span>
+      <span>Figure-8 Focus</span>
+      <span>Near-Far Focus</span>
+      <span>360 Eye Roll</span>
+      <span>Temple Massage</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="pricing-box">
+      <div class="free">Free</div>
+      <p style="color:#555;margin-top:4px;">Break timer &amp; tracking included at no cost.</p>
+      <div class="premium">Unlock all 6 exercises for a one-time payment of <strong>$2.99</strong></div>
+    </div>
+    <div class="privacy-banner">
+      <p><strong>Zero data collection.</strong> No accounts. No analytics. No ads. <a href="privacy.html">Privacy&nbsp;Policy</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <nav>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <p>&copy; 2026 Yaroslav Shevchenko. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
